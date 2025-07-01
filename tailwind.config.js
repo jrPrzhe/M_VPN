@@ -1,9 +1,8 @@
 module.exports = {
   content: [
-    "./pages/*.js",
-    "./pages/**/*.js",
-    "./components/*.js",
-    "./components/**/*.js",
+    
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     boxShadow: {
@@ -20,7 +19,9 @@ module.exports = {
     },
     colors: {
       transparent: "transparent",
+      current: "currentColor",
       black: {
+        100: "#EAEAEA",
         500: "#4F5665",
         600: "#0B132A",
       },
@@ -40,8 +41,27 @@ module.exports = {
         400: "#AFB5C0",
         500: "#DDDDDD",
       },
+      // Добавляем основные цвета для лучшей поддержки
+      red: {},
+      blue: {},
+      yellow: {},
+      purple: {},
+      pink: {},
+      indigo: {},
+      teal: {},
+      cyan: {},
+      emerald: {},
+      lime: {},
+      amber: {},
+      rose: {},
+      sky: {},
+      neutral: {},
+      stone: {},
+      slate: {},
     },
-    extend: {},
+    extend: {
+      fontFamily: {},
+    },
   },
   variants: {
     extend: {
