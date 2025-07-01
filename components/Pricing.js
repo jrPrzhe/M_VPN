@@ -95,7 +95,7 @@ const Pricing = () => {
 
   // Функция для открытия модального окна
   const handleSelectPlan = (plan) => {
-    alert("Выбран тариф");
+    
     setSelectedPlan(plan);
     setShowModal(true);
   };
